@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/bk"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:src="@drawable/previousicon"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:id="@+id/fwd"
+            android:layout_width="23dp"
+            android:layout_height="20dp"
+            android:src="@drawable/nexticon" 
+            android:layout_marginTop="10dp"/>
+
+      <EditText
+          android:id="@+id/urla"
+          android:layout_width="160dp"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:hint="Enter the url" 
+          android:singleLine="true">
+         
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/rel"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:src="@drawable/reloadicon" />
+
+        <ImageButton
+            android:id="@+id/bookmark"
+            android:layout_width="30dp"
+            android:layout_height="36dp"
+            android:src="@drawable/star1" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    	<WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+
+</LinearLayout>
+
